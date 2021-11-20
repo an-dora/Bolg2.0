@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style-readmain.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+    <title>ALK Blog</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a class="img" href="main.html"><img width="40" src="images/ALKlogo2.PNG" alt=""></a>
+        <a href="Login.html">Đăng nhập / Đăng ký </a>
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown &#9660;</button>
+            <div class="dropdown-content">
+              <a href="#">Truyện tranh</a>
+              <a href="doc-huyetthan.html">Truyện chữ</a>
+            </div>
+        </div> 
+        <div class="search-box">
+          <button class="btn-search"><i class="fa fa-search"></i></i></button>
+          <input type="text" class="input-search" placeholder="Có không giữ mất thì tìm...">
+        </div>
+    </div>
+    <!-- Container -->
+    <div class="container">
+        <div class="head-container">
+            <img src="images/HuyetThan-art.png" alt="HuyetThan">
+        </div>
+        <div class="title">
+            <h1>Huyết Thần</h1>
+        </div>
+        <div id="item">
+            <div class="authur">
+                <img id="img-avatar" src="images/avatar.png" alt=""><p class="user-name">ALK Blog</p>
+                <p class="status">Chưa hoàn thành</p>
+            </div>
+            <div class="preface">
+                <p>Author: ALK Blog</p>
+                <p>Edit: ALK Blog</p>
+                <p>-------------</p>
+                <p>Đây là fic đầu tay, mong mọi người thông cảm.</p>
+                <p>Đừng copy mang truyện đi chỗ khác khi không có sự cho phép của tác giả</p>
+            </div>
+            <div class="tag-name">
+                <p>truyenchu</p>
+                <p>love</p>
+                <p>action</p>
+            </div>
+        </div>
+        <div class="next">
+            <div class="next-btn">
+                <a href="doc-huyetthan.html"><span></span><i class="fa fa-hand-o-right"></i>Bắt đầu đọc</a>
+            </div>
+        </div>
+        <div class="interact">
+            <div id="add">
+                <button onclick="addFunction()" id="addbutton">
+                    <i id="iconplus" class="fa fa-plus" aria-hidden="true"></i>
+                    <p id="addbtn">Thêm vào thư viện</p>
+                </button>
+            </div>
+            <div id="voted">
+                <button onclick="votedFunction()" id="votedbutton">
+                    <i id="iconvoted" class="fa fa-star-o" aria-hidden="true"></i>
+                    <p id="votedbtn">Bình chọn</p>
+                </button>
+            </div>
+            <div id="share">
+                <div class="sharebtn">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-youtube-play"></i></a>
+                </div>
+            </div>
+        </div>
+        <section id="box">
+            <div class="comment">
+                <div class="comment1">
+                    <form>
+                        <img id="img-avatar" src="images/avatar.png" alt=""><p class="user-name">ALK Blog</p>
+                        <textarea id="commentbox" placeholder="Để lại một bình luân"></textarea>
+                        <div class="cmtbtn">
+                            <input type="submit" value="Bình luận">
+                            <button id="cancel">Huỷ</button>
+                        </div>
+                    </form>
+                    <div id="list-top">
+                        <div id="list">
+    
+                        </div>
+                    </div>
+                </div>      
+                
+            </div>           
+            <!--  -->
+            <div id="slide-art">
+                <div class="title-slider">Có thể bạn sẽ thích</div>
+                <div class="slider">
+                    <div class="slides">
+                        <!--  -->
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+                        <!--  -->
+                        <div class="slide first">
+                            <a href="#"><img src="images/HuyetThan-art.png" alt=""></a>
+                        </div>
+                        <div class="slide">
+                            <a href="#"><img src="images/HuyetThan-art.png" alt=""></a>
+                        </div>
+                        <div class="slide">
+                            <a href="#"><img src="images/HuyetThan-art.png" alt=""></a>
+                        </div>
+                        <div class="slide">
+                            <a href="#"><img src="images/HuyetThan-art.png" alt=""></a>
+                        </div>
+                        <!--  -->
+                        <div class="navigation-auto">
+                            <div class="auto-btn"></div>
+                            <div class="auto-btn"></div>
+                            <div class="auto-btn"></div>
+                            <div class="auto-btn"></div>
+                        </div>
+                        <!--  -->
+                    </div>
+                    <!--  -->
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                    </div>
+                </div>  
+            </div>    
+        </section>         
+        
+        
+        <div class="introduce"></div>
+    </div>
+    <div id="footer">
+        <div class="footer-left">
+            <a href="#"><p>Truyện chữ</p></a>
+            <a href="#"><p>Truyện tranh</p></a>
+            <a href="#"><p>Ngôn ngữ</p></a>
+            <a href="#"><p>Tác giả</p></a>
+        </div>
+        <div class="footer-right">
+            <a href="#"><p>Điều khoản</p></a>
+            <a href="#"><p>Trợ giúp</p></a>
+            <a href="#"><p>Báo Cáo</p></a>
+            <a href="#"><p class="alkblog">2021 ALK Blog</p></a>
+        </div>      
+    </div>
+
+<script type="text/javascript" src="js/js-read.js"></script>
+</body>
+</html>

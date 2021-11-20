@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style-login.css">
+    <title>ALK Blog</title>
+</head>
+<body>
+    <div class="cotn_principal">
+        <div class="cont_centrar">
+            <div class="cont_login">
+                <div class="cont_info_log_sign_up">
+                    <div class="col_md_login">
+                        <div class="cont_ba_opcitiy">
+                            <h2>Đăng nhập</h2>  
+                            <p>Bạn có tài khoản chứ?</p> 
+                            <button class="btn_login" onclick="cambiar_login()">LOGIN</button>
+                        </div>
+                    </div>
+                    <div class="col_md_sign_up">
+                        <div class="cont_ba_opcitiy">
+                            <h2>Đăng ký</h2>  
+                            <p>Bạn là thành viên mới?</p>                       
+                            <button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
+                        </div>
+                    </div>
+                </div> 
+                <div class="cont_back_info">
+                    <div class="cont_img_back_grey">
+                    <img src="images/lr.jpg" alt="">
+                    </div>
+                </div>
+                <div class="cont_forms" >
+                    <div class="cont_img_back_">
+                        <img src="images/lr.jpg" alt="">
+                        
+                        </div>
+                    <div class="cont_form_login">
+                        <a href="#" onclick="ocultar_login_sign_up()" ><h1><i class="fas fa-times-circle blue"></i></h1></a>
+                        <h2>LOGIN</h2>
+                        <input type="text" placeholder="Email" />
+                        <input type="password" placeholder="Password" />
+                        <button class="btn_login" onclick="cambiar_login()">LOGIN</button>
+                    </div>     
+                    <div class="cont_form_sign_up">
+                        <a href="#" onclick="ocultar_login_sign_up()"><h1><i class="fas fa-times-circle red"></i></h1></a>
+                            <h2>SIGN UP</h2>
+                        <input type="text" placeholder="Email" />
+                        <input type="text" placeholder="User" />
+                        <input type="password" placeholder="Password" />
+                        <input type="password" placeholder="Confirm Password" />
+                        <button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+</html>
