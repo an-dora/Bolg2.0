@@ -150,7 +150,7 @@ div{
 .main-layout{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1000px 500px 500px 300px;
+    grid-template-rows: 400px auto auto 300px;
     grid-gap: 20px;
     padding: 20px;
 }
@@ -161,25 +161,27 @@ div{
     border: red 1px solid;
 }
 .layout:nth-child(2){
-    overflow: scroll;
+    /* overflow: scroll; */
     grid-column: 1/4;
     grid-row: 2/4;
     border-radius: 5px;
     border: red 1px solid;
 }
+/* Top Ranking */
 .layout:nth-child(3){
+    height: 100px;
     grid-column: 4/5;
     grid-row: 2/3;
     border-radius: 5px;
     border: red 1px solid;
 }
-.layout:nth-child(4){
+/* .layout:nth-child(4){
     grid-column: 4/5;
     grid-row: 3/4;
     border-radius: 5px;
     border: red 1px solid;
-}
-.layout:nth-child(5){
+} */
+.layout:nth-child(4){
     grid-column: 1/5;
     grid-row: 4/5;
     border-radius: 5px;
