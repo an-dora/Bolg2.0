@@ -4,6 +4,9 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+:not(.navbar1) {
+    filter: invert(1);
+  }
 div{
   display: block;
 }
@@ -146,6 +149,7 @@ div{
         width: 200px;
     }
 }
+/* PC */
 @media screen and (min-width: 990px){
     /* Main */
     .main-layout{
@@ -253,7 +257,8 @@ div{
         /* border: red 1px solid; */
     }
 }
-@media screen and (max-width: 990px){
+/* 1/2 PC */
+@media screen and (min-width: 575px){
     /* Main */
     .main-layout{
         display: grid;
@@ -291,6 +296,116 @@ div{
         background: #2cbd8c;
         padding: 10px 20px;
         font-size: 20px;
+        font-weight: 700;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .top-truyen ul{
+    position: relative;
+    background: #fff;
+    }
+
+    .top-truyen ul li {
+    list-style: none;
+    padding: 10px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    transition: transform 0.5s;
+    }
+    .top-truyen ul li:nth-child(1){
+        color: rgb(211, 0, 0);
+    }
+    .top-truyen ul li:nth-child(2){
+        color: rgb(212, 138, 0);
+    }
+    .top-truyen ul li:nth-child(3){
+        color: rgb(187, 187, 0);
+    }
+
+    .top-truyen ul li:nth-child(1):hover{
+        color: rgb(255, 42, 42);
+    }
+    .top-truyen ul li:nth-child(2):hover{
+        color: rgb(255, 166, 0);
+    }
+    .top-truyen ul li:nth-child(3):hover{
+        color: rgb(255, 255, 0);
+    }
+
+    .top-truyen ul li span{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    font-size:16px;
+    font-weight: bold;
+    }
+
+    .top-truyen ul:hover li {
+    opacity: 0.2;
+    }
+    .top-truyen ul li:hover{
+    transform: scale(1.1);
+    z-index: 10;
+    background: #41b890;
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+    color: #fff;
+    opacity: 1;
+    }
+    .top-truyen ul li:hover span {
+    background: #fff;
+    color: #41b890;
+    }
+    /* About */
+    .layout:nth-child(4){
+        grid-column: 1/5;
+        grid-row: 4/5;
+        border-radius: 5px;
+        /* border: red 1px solid; */
+    }
+}
+@media screen and (max-width: 575px){
+    /* Main */
+    .main-layout{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-gap: 20px;
+        padding: 20px;
+    }
+    .layout:first-child{
+        grid-column: 1/5;
+        grid-row: 1/2;
+        border-radius: 5px;
+        /* border: red 1px solid; */ 
+    }
+    .layout:nth-child(2){
+        /* overflow: scroll; */
+        grid-column: 1/5;
+        grid-row: 2/3;
+        border-radius: 5px;
+        /* border: red 1px solid; */
+    }
+    /* Top Ranking */
+    .layout:nth-child(3){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        grid-column: 1/5;
+        grid-row: 3/4;
+        border-radius: 5px;
+        /* border: red 1px solid;  */
+    }
+    /* Top tryuen */
+    .top-truyen h2{
+        color: #fff;
+        background: #2cbd8c;
+        padding: 10px 20px;
+        font-size: 15px;
         font-weight: 700;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
