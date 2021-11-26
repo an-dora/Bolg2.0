@@ -6,9 +6,6 @@
     background-color: #e4dace;
 /*     background-color: #2B4448;*/
 }
-:not(.navbar1) {
-    filter: invert(1);
-  }
 div{
   display: block;
 }
@@ -373,7 +370,6 @@ div{
         /* border: red 1px solid; */
     }
 }
-<<<<<<< HEAD
 @media screen and (max-width: 575px){
     /* Main */
     .main-layout{
@@ -484,8 +480,6 @@ div{
         /* border: red 1px solid; */
     }
 }
-=======
-
 /* Main Slider*/
 .box{
     width: 300px;
@@ -628,9 +622,6 @@ div{
     font-weight: 400;
     color: #2B394A;
 }
-
-
->>>>>>> 22cbb37211be7de16c9314c5c07163369b113380
 /* Main of layout */
 .item{
     border-radius: 5px;
