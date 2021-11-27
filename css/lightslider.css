@@ -98,7 +98,7 @@
     transition: all 0.5s linear 0s;
 }
 .lSSlideOuter .lSPager.lSpg > li:hover a, .lSSlideOuter .lSPager.lSpg > li.active a {
-    background-color: #428bca;
+    background-color: #f0db3b;
 }
 .lSSlideOuter .media {
     opacity: 0.8;
@@ -157,6 +157,7 @@
     top: 50%;
     height: 32px;
     background-image: url('../images/controls.png');
+    mix-blend-mode: screen;
     cursor: pointer;
     position: absolute;
     z-index: 99;

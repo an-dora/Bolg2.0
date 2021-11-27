@@ -277,18 +277,18 @@ div{
     }
     .layout:nth-child(2){
         /* overflow: scroll; */
-        grid-column: 1/5;
-        grid-row: 2/3;
+        grid-column: 1/4;
+        grid-row: 2/5;
         border-radius: 5px;
         /* border: red 1px solid; */
     }
     /* Top Ranking */
     .layout:nth-child(3){
-        display: grid;
+        /* display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 10px;
-        grid-column: 1/5;
-        grid-row: 3/4;
+        gap: 10px; */
+        grid-column: 4/5;
+        grid-row: 2/3;
         border-radius: 5px;
         /* border: red 1px solid;  */
     }
@@ -512,6 +512,7 @@ div{
     align-items: center;
     padding: 10px 20px;
     box-sizing: border-box;
+    background-color: #403931;
 /*     font-family: calibri; */
 }
 .detail-box a{
@@ -520,19 +521,21 @@ div{
 .type{
     display: flex;
     flex-direction: column;
+    background-color: #403931;
 }
 .type a{
-    color: #222222;
+    color: white;
     margin: 5px 0px;
     font-weight: 700;
     letter-spacing: 0.5px;
     padding-right: 8px;
 }
 .type span{
-    color: rgba(26, 26, 26, 0.5);
+    color: white;
+    background-color: #403931;
 }
 .title{
-    color: #333333;
+    color: white;
     font-weight: 700;
     font-size: 1.1rem;
     letter-spacing: 0.5px;
@@ -544,7 +547,7 @@ div{
     transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
-    background-color: rgba(92, 95, 236, 0.6);
+    background-color: #1e1f1b93;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -557,7 +560,7 @@ div{
     align-items: center;
     background-color: #FFFFFF;
     color: #252525;
-    font-weight: 700;
+    font-weight: 800;
     letter-spacing: 1px;
     font-family: calibri;
     border-radius: 20px;
@@ -565,7 +568,7 @@ div{
 }
 .read-btn:hover{
     color: #FFFFFF;
-    background-color: #f15fa3;
+    background-color: #403931;
     transition: all ease 0.3s;
 }
 .overlay{
@@ -591,36 +594,70 @@ div{
 }
 
 /* Phan tu trong Main */
-.row .col-lg-3{
-    margin: 0 10px;
-    background-color: #b1b2a2;
-    border-radius: 10px;
+.row{
+    display: flex;
+    flex-wrap: wrap;
+/*     justify-content: space-around; */
+    margin: auto;
 }
-.row img{
-    margin-top: 10px;
+.col-lg-3{
+    margin: 0 10px 10px 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    position: relative;
+}
+.col-lg-3 img{
+    margin: 10px 0;
+    width: 100%;
     border-radius: 5px;
 }
-.row a{
+.col-lg-3 a{
     text-decoration: none;
 }
 .title-overlay{
-    margin-bottom: 10px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.5), #4c4d45);
+    opacity: 0;
+    transition: 0.5s;
+/*     margin-bottom: 10px; */
 }
-.row h5{
+.desc-overlay{
+    width: 80%;
+    position: absolute;
+/*     box-shadow: 0 0 20px #e4dace; */
+    background-color: rgba(0, 0, 0, 0);
+    bottom: 0;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+.col-lg-3:hover .title-overlay{
+    opacity: 1;
+}
+.col-lg-3:hover .desc-overlay{
+    bottom: 10%;
+    opacity: 1;
+}
+.desc-overlay h5{
     margin: 10px 5px 0;
-    color: #2B394A;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
     font-weight: 700;
     font-size: 25px;
 }
-.row .up{
+.up, .in{
     margin: 0 10px;
-    font-weight: 400;
-    color: #2B394A;
-}
-.row .in{
-    margin: 0 10px;
-    font-weight: 400;
-    color: #2B394A;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
 }
 /* Main of layout */
 .item{
