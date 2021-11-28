@@ -3,66 +3,72 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    background-color: #e4dace;
 }
 div{
   display: block;
 }
-.navbar {
+:root {
+  --main-color: #403931;
+  --box-color: white;
+}
+.navbar1 {
     overflow: hidden;
-    background-color: #77B3A0;
+    background-color: var(--main-color);
   }
-.navbar .img{
-      float: left;
-      margin: 4px 0 0 10px;
-      padding: 0;
-      
-  }
-.navbar .img img{
-    margin: 0;
-    width: 115px;
+.navbar1 .img{
+    float: left;
+    left: 0;
+    margin: 4px 0 0 10px;
+    padding: 0
+}
+.navbar1 .img img{
+    /* margin: 0; */
+    width: 110px;
     height: auto;
     mix-blend-mode: screen;
 }
-.navbar a, .search{
-    align-items: center;
+.navbar1 a, .search{
     float: right;
     font-size: 16px;
-    color: white;
+    font-weight: 400;
+    color: #ffffff;
     text-align: center;
     padding: 14px 16px;
+    background-color: var(--main-color);
     text-decoration: none;
 }
-.dropdown {
+.dropdown1 {
     float: right;
     overflow: hidden;
 }
   
-.dropdown .dropbtn {
+.dropdown1 .dropbtn1 {
     font-size: 16px;  
     border: none;
     outline: none;
     color: white;
     padding: 14px 16px;
-    background-color: inherit;
+    background-color: var(--main-color);
     font-family: inherit;
     margin: 0;
 }
   
-.navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: #5b9482;
+.navbar1 a:hover, .dropdown1:hover .dropbtn1 {
+    background-color: var(--main-color);
 }
   
-.dropdown-content {
+.dropdown-content1 {
     display: none;
     position: absolute;
  
-    background-color: #3b7462;
+    background-color: var(--main-color);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
   
-.dropdown-content a {
+.dropdown-content1 a {
     float: none;
     color: white;
     padding: 12px 16px;
@@ -71,25 +77,27 @@ div{
     text-align: left;
 }
   
-  .dropdown-content a:hover {
-    background-color: #ddd;
+.dropdown-content1 a:hover {
+    background-color: #b1b2a2;
+    color: #2B394A;
 }
   
-  .dropdown:hover .dropdown-content {
+.dropdown1:hover .dropdown-content1 {
     display: block;
 }
-.search-box{
+.search-box1{
     float: right;
     width: fit-content;
     height: fit-content;
     position: relative;
 }
-.search-box {
+.search-box1 {
+    background-color: var(--main-color);
     width: fit-content;
     height: fit-content;
     position: relative;
 }
-.input-search {
+.input-search1 {
     height: 50px;
     width: 50px;
     border-style: none;
@@ -98,18 +106,17 @@ div{
     outline: none;
     border-radius: 50%;
     transition: all 0.5s ease-in-out;
-    background-color: #539d85;
-    color: #fff;
+    background-color: var(--main-color);
+    color: white;
 }
-.input-search::placeholder {
+.input-search1::placeholder {
     margin-left: 50px;
-    color: rgba(255, 255, 255, 0.5);
+    color: white /* rgba(255, 255, 255, 0.5) */;
     font-size: 18px;
     letter-spacing: 2px;
     font-weight: 100;
 }
-.btn-search {
-    padding-right: 57px;
+.btn-search1 {
     width: 50px;
     height: 50px;
     border-style: none;
@@ -120,33 +127,32 @@ div{
     border-radius: 50%;
     position: absolute;
     right: 0px;
-    color: #ffffff;
-    background-color: transparent;
+/*     background-color: transparent; */
     pointer-events: painted;
 }
-.btn-search:focus ~ .input-search {
+.btn-search1:focus ~ .input-search1 {
     width: 320px;
     border-radius: 0px;
     background-color: transparent;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
 }
-.input-search:focus {
+.input-search1:focus {
     width: 320px;
     border-radius: 0px;
     background-color: transparent;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
 }
-@media screen and (max-width: 650px){
-    .input-search::placeholder {
+@media screen and (max-width: 700px){
+    .input-search1::placeholder {
         font-size: 12px;
         letter-spacing: 0;
     }
-    .btn-search:focus ~ .input-search {
+    .btn-search1:focus ~ .input-search1 {
         width: 200px;
     }
-    .input-search:focus {
+    .input-search1:focus {
         width: 200px;
     }
 }
@@ -175,11 +181,13 @@ div{
     font-size: 18px;
     overflow: hidden;
     border-radius: 5px;
+    background-color: white;
     box-shadow: 2px 2px 2px 2px rgba(78, 78, 78, 0.2);
     border: 1px solid rgba(165, 165, 165, 0.645);
     
 }
 #item .authur {
+    background-color: white;
     margin: 5px 0 5px 10px;
 }
 #item .authur .status {
@@ -190,17 +198,20 @@ div{
     padding: 1px 7px 1px 7px;
     font-size: 16px;
     color: rgb(255, 255, 255);
-    background: #539d85;
+    background: var(--main-color);
     border-radius: 10px;
 }
 #item .preface {
+    background-color: white;
     margin: 50px 0 0 120px;
     font-size: 16px;
 }
 #item .preface p{
+    background-color: white;
     margin-bottom: 10px;
 }
 #item .tag-name {
+    
     margin-left: 80px;
 }
 #item .tag-name p{
@@ -217,7 +228,7 @@ div{
 
 /* Story Art */
 .head-container{
-    margin-top: 50px;
+    margin: 50px auto auto;
     text-align: center;
 
 }
@@ -226,12 +237,13 @@ div{
     height: auto;
 }
 
-.fa{
+/* .fa{
     padding-left: 25px;
-}
+} */
 
 /* Tilte Story */
 .title{
+    margin: 0 auto auto;
     text-align: center;
 }
 .title h1{
@@ -249,9 +261,9 @@ div{
     .head-container img {
         width: 300px;
     }
-    .title {
+    /* .title {
         width: 350px;
-    }
+    } */
     #item {
         width: 330px;
         margin: 0 0 0 0;
@@ -293,10 +305,10 @@ textarea::-webkit-scrollbar{
     display: inline-block;
     margin: 20px 10px;
     padding: 12px 0;
-    background: #5b9482;
+    background: var(--main-color);
     color: #EFF0DE;
     border-radius: 5px;
-    box-shadow: 4px 4px 6px 0px  #77B3A0;
+    box-shadow: 4px 4px 6px 0px  var(--main-color);
     position: relative;
     z-index: 1;
     transition: color 0.5s;
@@ -309,7 +321,7 @@ textarea::-webkit-scrollbar{
     top: 0;
     left: 0;
     border-radius: 5px;
-    background: #3b7462;
+    background: var(--main-color);
     z-index: -1;
 }
 .next-btn a i{
@@ -335,7 +347,7 @@ textarea::-webkit-scrollbar{
 /* Interact */
 .interact {
     position: relative;
-    width: 100%;
+    width: 97%;
 }
 /* ADD Thu Vien */
 #add {
@@ -386,9 +398,9 @@ textarea::-webkit-scrollbar{
     text-align: center;
 
 }
-.sharebtn{
+/* .sharebtn{
     width: 400px;
-}
+} */
 #share .fa{
     height: 35px;
     width: 60px;
@@ -402,7 +414,7 @@ textarea::-webkit-scrollbar{
     transition: 0.2s;
 }
 #share .fa:hover{
-    background: #3b7462;
+    background: var(--main-color);
     color: #ffffff;
     transform: translateY(-7px);
     border: none;
@@ -436,7 +448,7 @@ textarea::-webkit-scrollbar{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f5f6f6;
+    background-color: white;
     font-family: arial;
 }
 .comment1 {
@@ -445,19 +457,25 @@ textarea::-webkit-scrollbar{
     width: 600px;
     border: 2px solid gray;
 /*     box-shadow: 10px 10px 6px 0px  gray; */
+background-color: white;
     border-radius: 5px;
     padding: 15px 10px;
     z-index: 2;
+}
+.comment-form{
+    background-color: var(--box-color);
 }
 #img-avatar{
     margin: 0 20px 10px 0;
     float: left;
     width: 50px;
     height: 50px;
+    /* background-color: white; */
     border-radius: 50%;
     position: relative;
 }
 .user-name{
+    background-color: white;
     font-size: 18px;
     font-weight: bold;
 }
@@ -467,7 +485,7 @@ textarea::-webkit-scrollbar{
     width: 100%;
     border: none;
     border-bottom: 2px solid #aaa;
-    background-color: transparent;
+    background-color: white;
     margin-bottom: 10px;
     resize: none;
     outline: none;
@@ -485,7 +503,7 @@ input[type="submit"], #cancel{
 }
 input[type="submit"] {
     color: #fff;
-    background-color: #3b7462;
+    background-color: var(--main-color);
 }
 #cancel {
     color: gray;
@@ -493,6 +511,7 @@ input[type="submit"] {
 }
 .cmtbtn{
     display: none;
+    background-color: var(--box-color);
 }
 
 /* Box Comment */
@@ -530,16 +549,19 @@ input[type="submit"] {
     float: right;
     height: 350px;
     /* margin-top: -100px; */
-    margin-right: 90px;
+    /* margin-right: 90px; */
     text-align: center;
-    border: 3px solid #3b7462;
+    background-color: var(--box-color);
+    border: 3px solid var(--main-color);
     box-shadow: 2px 4px 10px 0px gray;
     padding: 10px 10px 10px 10px;
     border-radius: 10px;
 }
 #slide-art .title-slider{
     font-size: 20px;
-    color: #3b7462;
+    font-weight: 700;
+    color: var(--main-color);
+    background-color: var(--box-color);
     padding-bottom: 10px;
 }
 .slider img{
@@ -572,9 +594,11 @@ input[type="submit"] {
     margin-top: -37px;
     display: flex;
     justify-content: center;
+    background-color: rgba(255, 255, 255, 0);
 }
 .manual-btn{
-    border: 2px solid #3b7462;
+    border: 2px solid var(--box-color);
+    background-color: rgba(255, 255, 255, 0);
     padding: 4px;
     border-radius: 10px;
     cursor: pointer;
@@ -606,9 +630,11 @@ input[type="submit"] {
     width: 200px;
     justify-content: center;
     margin-top: 250px;
+    background-color: rgba(255, 255, 255, 0);
 }
 .navigation-auto div{
-    border: 2px solid #3b7462;
+    border: 2px solid var(--box-color);
+    background-color: rgba(255, 255, 255, 0);
     padding: 4px;
     border-radius: 10px;
     transition: 1s;
@@ -618,16 +644,16 @@ input[type="submit"] {
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1{
-    background: #3b7462;
+    background: var(--main-color);
 }
 #radio2:checked ~ .navigation-auto .auto-btn2{
-    background: #3b7462;
+    background: var(--main-color);
 }
 #radio3:checked ~ .navigation-auto .auto-btn3{
-    background: #3b7462;
+    background: var(--main-color);
 }
 #radio4:checked ~ .navigation-auto .auto-btn4{
-    background: #3b7462;
+    background: var(--main-color);
 }
 @media screen and (max-width: 650px){
     #slide-art{
@@ -658,6 +684,10 @@ input[type="submit"] {
 #footer{
     color: gray;
     font-size: 14px;
+}
+#footer .footer-top{
+    margin: 20px 50px;
+    border-bottom: 1px solid gray;
 }
 #footer .footer-left{
     float: left;

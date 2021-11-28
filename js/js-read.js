@@ -13,11 +13,13 @@ function addFunction() {
     var changeicon = document.getElementById("iconplus")
     var change = document.getElementById("addbtn")
     if(change.innerHTML === "Thêm vào thư viện"){
-        add.style.color = "#3b7462"
+        add.style.color = "#403931"
+        add.style.fontWeight = "700"
         change.innerHTML = "Đã thêm vào thư viện"
         changeicon.className = "fa fa-check"
     } else {
         add.style.color = "rgb(128, 128, 128)"
+        add.style.fontWeight = "400"
         change.innerHTML = "Thêm vào thư viện"
         changeicon.className = "fa fa-plus"
     }
@@ -28,11 +30,13 @@ function votedFunction() {
     var changeicon = document.getElementById("iconvoted")
     var change = document.getElementById("votedbtn")
     if(change.innerHTML === "Bình chọn"){
-        add.style.color = "#3b7462"
+        add.style.color = "#403931"
+        add.style.fontWeight = "700"
         change.innerHTML = "Đã bình chọn"
         changeicon.className = "fa fa-star"
     } else {
         add.style.color = "rgb(128, 128, 128)"
+        add.style.fontWeight = "400"
         change.innerHTML = "Bình chọn"
         changeicon.className = "fa fa-star-o"
     }
@@ -69,6 +73,7 @@ $("textarea").keyup(function(e) {
             "float": "left",
             "width": "40px",
             "height": "40px",
+            "background-color": "white",
             "border-radius": "50%",
         })
         $(".name-user").css({

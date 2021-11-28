@@ -9,18 +9,22 @@
 div{
   display: block;
 }
+:root {
+    --main-color: #403931;
+  }
 .navbar1 {
     overflow: hidden;
-    background-color: #403931;
+    background-color: var(--main-color);
   }
 .navbar1 .img{
     float: left;
+    left: 0;
     margin: 4px 0 0 10px;
     padding: 0
 }
 .navbar1 .img img{
-    margin: 0;
-    width: 115px;
+    /* margin: 0; */
+    width: 125px;
     height: auto;
     mix-blend-mode: screen;
 }
@@ -44,20 +48,20 @@ div{
     outline: none;
     color: white;
     padding: 14px 16px;
-    background-color: #403931;
+    background-color: var(--main-color);
     font-family: inherit;
     margin: 0;
 }
   
 .navbar1 a:hover, .dropdown1:hover .dropbtn1 {
-    background-color: #403931;
+    background-color: var(--main-color);
 }
   
 .dropdown-content1 {
     display: none;
     position: absolute;
  
-    background-color: #403931;
+    background-color: var(--main-color);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -87,7 +91,7 @@ div{
     position: relative;
 }
 .search-box1 {
-    background-color: #403931;
+    background-color: var(--main-color);
     width: fit-content;
     height: fit-content;
     position: relative;
@@ -101,7 +105,7 @@ div{
     outline: none;
     border-radius: 50%;
     transition: all 0.5s ease-in-out;
-    background-color: #403931;
+    background-color: var(--main-color);
     color: white;
 }
 .input-search1::placeholder {
@@ -184,7 +188,7 @@ div{
     /* Top tryuen */
     .top-truyen h2{
         color: #fff;
-        background: #403931;
+        background: var(--main-color);
         padding: 10px 20px;
         font-size: 20px;
         font-weight: 700;
@@ -295,7 +299,7 @@ div{
     /* Top tryuen */
     .top-truyen h2{
         color: #fff;
-        background: #2cbd8c;
+        background: var(--main-color);
         padding: 10px 20px;
         font-size: 20px;
         font-weight: 700;
@@ -353,14 +357,14 @@ div{
     .top-truyen ul li:hover{
     transform: scale(1.1);
     z-index: 10;
-    background: #41b890;
+    background: var(--main-color);
     box-shadow: 0 5px 25px rgba(0,0,0,.2);
     color: #fff;
     opacity: 1;
     }
     .top-truyen ul li:hover span {
     background: #fff;
-    color: #41b890;
+    color: var(--main-color);
     }
     /* About */
     .layout:nth-child(4){
@@ -405,7 +409,7 @@ div{
     /* Top tryuen */
     .top-truyen h2{
         color: #fff;
-        background: #2cbd8c;
+        background: var(--main-color);
         padding: 10px 20px;
         font-size: 15px;
         font-weight: 700;
@@ -463,14 +467,14 @@ div{
     .top-truyen ul li:hover{
     transform: scale(1.1);
     z-index: 10;
-    background: #41b890;
+    background: var(--main-color);
     box-shadow: 0 5px 25px rgba(0,0,0,.2);
     color: #fff;
     opacity: 1;
     }
     .top-truyen ul li:hover span {
     background: #fff;
-    color: #41b890;
+    color: var(--main-color);
     }
     /* About */
     .layout:nth-child(4){
@@ -512,7 +516,7 @@ div{
     align-items: center;
     padding: 10px 20px;
     box-sizing: border-box;
-    background-color: #403931;
+    background-color: var(--main-color);
 /*     font-family: calibri; */
 }
 .detail-box a{
@@ -521,7 +525,7 @@ div{
 .type{
     display: flex;
     flex-direction: column;
-    background-color: #403931;
+    background-color: var(--main-color);
 }
 .type a{
     color: white;
@@ -532,7 +536,7 @@ div{
 }
 .type span{
     color: white;
-    background-color: #403931;
+    background-color: var(--main-color);
 }
 .title{
     color: white;
@@ -568,7 +572,7 @@ div{
 }
 .read-btn:hover{
     color: #FFFFFF;
-    background-color: #403931;
+    background-color: var(--main-color);
     transition: all ease 0.3s;
 }
 .overlay{
@@ -671,6 +675,10 @@ div{
     color: gray;
     font-size: 14px;
 }
+#footer .footer-top{
+    margin: 0 35px;
+    border-bottom: 1px solid gray;
+}
 #footer .footer-left{
     float: left;
     display: flex;
@@ -693,4 +701,18 @@ div{
 }
 #footer .footer-right a .alkblog{
     font-size: 10px;
+}
+@media screen and (max-width: 650px){
+    #footer .footer-left{
+        margin: 0;
+    }
+    #footer .footer-left a{
+        margin: 10px 5px;
+    }
+    #footer .footer-right{
+        margin: 0;
+    }
+    #footer .footer-right a,h6{
+        margin: 10px 5px;
+    }
 }
